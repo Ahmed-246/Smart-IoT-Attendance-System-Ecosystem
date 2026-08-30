@@ -1,1 +1,0 @@
-Always Check @PROJECT_RULES.md and @PROJECT_BRIEF.md before coding

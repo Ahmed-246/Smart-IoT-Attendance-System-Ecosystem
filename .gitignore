@@ -41,3 +41,13 @@ modal.txt
 findings.md
 progress.md
 task_plan.md
+
+# Organization Cleanup Ignored Files
+dataset/
+Respi 4 WIFI/
+STUDY_GUIDE.md
+TODO.md
+PROJECT_RULES.md
+Raspberry Pi Local Server Feasibility.md
+Raspberry Setup Files/
+docs/scratch/
