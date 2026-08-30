@@ -1,0 +1,50 @@
+╔══════════════════════════════════════════════════════════╗
+║         ESP32  ←→  RC522 RFID  —  WIRING DIAGRAM        ║
+╚══════════════════════════════════════════════════════════╝
+
+  RC522 Pin    │  ESP32 Pin   │  Notes
+  ─────────────┼──────────────┼──────────────────────────
+  SDA (SS)     │  GPIO  5     │  Chip select
+  SCK          │  GPIO 18     │  SPI clock  (hardware)
+  MOSI         │  GPIO 23     │  SPI data out
+  MISO         │  GPIO 19     │  SPI data in
+  IRQ          │  —           │  Not used
+  GND          │  GND         │
+  RST          │  GPIO 22     │  Reset
+  3.3V         │  3.3V        │  ⚠ DO NOT use 5V
+
+╔══════════════════════════════════════════════════════════╗
+║              LED + BUZZER WIRING                        ║
+╚══════════════════════════════════════════════════════════╝
+
+  Component     │  ESP32 Pin  │  Notes
+  ──────────────┼─────────────┼─────────────────────────
+  Green LED (+) │  GPIO  2    │  Built-in on most boards
+  Red LED (+)   │  GPIO  4    │  External: + 220Ω → GND
+  Buzzer (+)    │  GPIO 15    │  Optional passive buzzer
+
+  Both external LEDs: Anode → 220Ω resistor → ESP32 pin
+                      Cathode → GND
+
+╔══════════════════════════════════════════════════════════╗
+║              POWER                                      ║
+╚══════════════════════════════════════════════════════════╝
+
+  Power the ESP32 via:
+  - USB cable during development
+  - 5V phone charger (USB) for deployment
+  - 18650 Li-ion cell with TP4056 charger module for portable
+
+╔══════════════════════════════════════════════════════════╗
+║              LED FEEDBACK GUIDE                         ║
+╚══════════════════════════════════════════════════════════╝
+
+  Pattern                    │  Meaning
+  ───────────────────────────┼──────────────────────────
+  Green solid                │  Ready — waiting for card
+  Red solid                  │  WiFi connecting…
+  Green × 2 flash            │  ✓ Attendance recorded
+  Red × 3 flash              │  ✗ Error (check serial)
+  Green+Red alternate × 3    │  Sending to server…
+  Green+Red both × 2 slow    │  Duplicate scan
+  Both off                   │  Idle / booting

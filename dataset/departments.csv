@@ -1,0 +1,13 @@
+id,name,description,faculty_id
+1,Electrical Engineering,Department of Electrical Engineering,1
+2,Mechanical Engineering,Department of Mechanical Engineering,1
+3,Civil Engineering,Department of Civil Engineering,1
+4,General Medicine,Department of General Medicine,2
+5,Surgery,Department of Surgery,2
+6,Pediatrics,Department of Pediatrics,2
+7,Software Engineering,Department of Software Engineering,3
+8,Data Science,Department of Data Science,3
+9,Cybersecurity,Department of Cybersecurity,3
+10,Accounting,Department of Accounting,4
+11,Marketing,Department of Marketing,4
+12,Finance,Department of Finance,4

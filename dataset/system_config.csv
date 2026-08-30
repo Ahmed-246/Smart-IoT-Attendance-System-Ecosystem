@@ -1,0 +1,2 @@
+id,is_locked,academic_year_start,academic_year_end,current_semester,log_retention_days
+1,False,2025,2026,2,30

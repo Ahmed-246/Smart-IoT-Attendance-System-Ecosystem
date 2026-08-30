@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# IDEs and Tools
+.gradle/
+.idea/
+.vscode/
+.continue/
+
+# Build outputs
+**/build/
+**/bin/
+**/gen/
+**/out/
+**/debug/
+**/release/
+dist/
+*.apk
+Temp/
+.memory/
+skills/
+*.hprof
+*.mp4
+# Personal and Scratch Files
+Book/
+DNA/
+Future Update/
+Noitce*/
+PM2*/
+MORSY.pdf
+engineer.png
+modal.txt
+findings.md
+progress.md
+task_plan.md

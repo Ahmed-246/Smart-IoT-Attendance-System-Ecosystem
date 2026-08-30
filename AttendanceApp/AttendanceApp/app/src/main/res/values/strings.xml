@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Attendance</string>
+    <string name="login_title">Sign In</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="logout">Sign Out</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="attendance_history">Attendance History</string>
+    <string name="sessions">Sessions</string>
+    <string name="ai_chatbot">AI Assistant</string>
+    <string name="profile">Profile</string>
+    <string name="no_active_sessions">No active sessions</string>
+    <string name="network_error">Network error. Check your connection.</string>
+</resources>
